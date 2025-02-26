@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 8%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.left-section {
+  display: grid;
+  grid-template-rows: 20% 1fr 20%;
+  overflow: hidden;
+}
+
+.header, .footer {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+  background: lightblue;
+  padding: 10px;
+  border: 2px solid black;
+  height: 100%;
+}
+
+.header div, .footer div {
+  background: white;
+  padding: 5px 10px;
+  border: 2px solid black;
+}
+
+.main {
+  display: grid;
+  place-items: center;
+  background: white;
+  border: 2px solid black;
+  overflow: hidden;
+}
+
+/* Правая секция */
+.right-section {
+  display: grid;
+  grid-template-rows: 2fr 20%;
+  overflow: hidden;
+}
+
+.sidebar {
+  display: grid;
+  background: lightgreen;
+  border: 2px solid black;
+  padding: 20px;
+  place-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.small-box {
+  display: grid;
+  background: lightcoral;
+  border: 2px solid black;
+  place-items: center;
+  overflow: hidden;
+}
+
+.small-box ul {
+  display: grid;
+  gap: 5px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.small-box a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
