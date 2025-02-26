@@ -1,10 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // 1. Поміняйте місцями контент блоків «x» та «y»
   let header = document.querySelector(".header div:nth-child(2)");
   let footer = document.querySelector(".footer div:nth-child(1)");
   [header.textContent, footer.textContent] = [footer.textContent, header.textContent];
 
-  // 2. Функція для обчислення площі паралелограма
   function calculateParallelogramArea(base, height) {
     return base * height;
   }
@@ -16,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
   resultParagraph.textContent = `Площа паралелограма: ${result}`;
   mainBlock.appendChild(resultParagraph);
 
-  // 3. Визначення кількості слів у тексті та робота з cookies
   let textForm = document.createElement("textarea");
   let submitBtn = document.createElement("button");
   submitBtn.textContent = "Підрахувати слова";
@@ -41,7 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // 4. Зміна кольору фону блоку "2" при mouseout і збереження в localStorage
   let sidebar = document.querySelector(".sidebar");
   sidebar.addEventListener("mouseout", () => {
     let newColor = prompt("Введіть колір фону для бокової панелі:");
@@ -53,7 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
     sidebar.style.backgroundColor = savedColor;
   }
 
-  // 5. Додавання фонових зображень у блоки тільки з текстовими вузлами
   let list = document.createElement("ol");
 
   for (let i = 1; i <= 5; i++) {
