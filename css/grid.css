@@ -49,7 +49,6 @@ html, body {
   overflow: hidden;
 }
 
-/* Правая секция */
 .right-section {
   display: grid;
   grid-template-rows: 2fr 20%;
